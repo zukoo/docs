@@ -13,9 +13,9 @@ Apache
 
     ProxyPass /syncthing/ http://localhost:8080/
     <Location /syncthing/>
-      ProxyPassReverse http://localhost:8080/
-      Order Allow,Deny
-      Allow from All
+    \  ProxyPassReverse http://localhost:8080/
+    \  Order Allow,Deny
+    \  Allow from All
     </Location>
 
 Nginx
